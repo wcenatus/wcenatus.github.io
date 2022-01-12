@@ -12,11 +12,19 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <title>Document</title>
 </head>
-<body>     
+<body> 
+    <div class="cw-bg-secondary">
+        <div class="xl:mx-60 flex justify-end space-x-4 ">
+            <a class="py-2 text-sm font-semibold bg-transparent rounded-lg cw-text-lightblue">Partner Log in</a>
+            <a class="py-2 text-sm font-semibold bg-transparent rounded-lg cw-text-lightblue">Merchant Web Reporting Login</a>
+            <a class="py-2 text-sm font-semibold bg-transparent rounded-lg cw-text-lightblue">CWA Gateway Login</a>   
+        </div>
+        
+    </div>    
     <div id="navbar" class="w-100 top-0 left-0" style="z-index: 1000; width: 100%;">
         <div class="antialiased dark-mode:bg-gray-900">
             <div class="py-5 w-full text-gray-700 cw-bg-primary dark-mode:text-gray-200 dark-mode:bg-gray-800">
-                <div x-data="{ open: false }" class="flex flex-col max-w-screen-2xl px-4 mx-auto xl:items-center xl:justify-between xl:flex-row xl:px-6 lg:px-8">
+                <div x-data="{ open: false }" class="flex flex-col px-10 lg:px-0 xl:mx-60 xl:items-center xl:justify-between xl:flex-row">
                     <div class="flex flex-row items-center justify-between p-1">
                         <div class="col-span-1">
                             <a href="/"><img class="h-14 w-auto" src="./assets/images/logo-white.png"/></a>
@@ -57,17 +65,19 @@
     </section>
 
     <section class="">
+        
         <div class="grid grid-cols-2" style="height: 100%; width: 100%;">
-            <div id="whitebgsec2" class="col-span-2 lg:col-span-1 xl:pl-60 p-10 xl:text-left lg:text-left md:text-left text-center">
-                <h2 data-aos="fade" data-aos-anchor-placement="top-bottom" class="font-bold text-xl cw-text-green">Sales Partner Program</h2>
-                <p data-aos="fade" data-aos-anchor-placement="top-bottom" class="my-3 mb-5 font-semibold text-lg">Generous compensation, a lucrative bonus structure and the freedom to work when you want — if this sounds like the perfect job, then a career in our Sales Partner Program is made for you.</p>
-                <a data-aos="fade" data-aos-anchor-placement="top-bottom" class="cw-bg-green rounded-lg px-4 py-2 mt-2 font-semibold rounded text-white hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-gray-800 focus:bg-gray-800 focus:outline-none focus:shadow-outline">Learn More</a>
-            </div>
-            <div id="blackbgsec2" class="col-span-2 lg:col-span-1 xl:pr-60 p-10 xl:text-left lg:text-left md:text-left text-center">
+            <div id="blackbgsec2" class="col-span-2 lg:col-span-1 xl:pl-60 p-10 xl:text-left lg:text-left md:text-left text-center">
                 <h2 data-aos="fade" data-aos-anchor-placement="top-bottom" class="font-bold text-xl cw-text-lightblue">Merchant Services</h2>
                 <p data-aos="fade" data-aos-anchor-placement="top-bottom" class="my-3 mb-5 font-semibold text-white text-lg">Discover how our cost-effective credit card processing, innovative payment solutions and round-the-clock support are tailor-made to help your business thrive.</p>
                 <a data-aos="fade" data-aos-anchor-placement="top-bottom" class="cw-bg-lightblue rounded-lg px-4 py-2 mt-2 font-semibold rounded text-white hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-gray-800 focus:bg-gray-800 focus:outline-none focus:shadow-outline">Learn More</a>
             </div>
+            <div id="whitebgsec2" class="col-span-2 lg:col-span-1 xl:pr-60 p-10 xl:text-left lg:text-left md:text-left text-center">
+                <h2 data-aos="fade" data-aos-anchor-placement="top-bottom" class="font-bold text-xl cw-text-green">Sales Partner Program</h2>
+                <p data-aos="fade" data-aos-anchor-placement="top-bottom" class="my-3 mb-5 font-semibold text-lg">Generous compensation, a lucrative bonus structure and the freedom to work when you want — if this sounds like the perfect job, then a career in our Sales Partner Program is made for you.</p>
+                <a data-aos="fade" data-aos-anchor-placement="top-bottom" class="cw-bg-green rounded-lg px-4 py-2 mt-2 font-semibold rounded text-white hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-gray-800 focus:bg-gray-800 focus:outline-none focus:shadow-outline">Learn More</a>
+            </div>
+            
         </div>
     </section>
 
@@ -160,17 +170,16 @@
                 <div class="flex flex-col col-span-3 lg:col-span-1 w-56 mx-auto">
                     <label class="cw-text-primary font-bold text-lg mb-5">Contact</label>
                     <ul class="space-y-2 fa-ul" style="margin-left:-1px ;">
-                        <li><span class="fa-li"><i class="fas fa-map-marker-alt cw-text-primary"></i></span>6900 Jericho Turnpike, Suite 200, 
-                            Syosset, NY 11791,
-                            USA
+                        <li><span class="fa-li"><i class="fas fa-map-marker-alt cw-text-primary"></i></span>6900 Jericho Turnpike, Suite 208 
+                            Syosset, NY 11791
                         </li>
-                        <li><span class="fa-li"><i class="fas fa-envelope cw-text-primary"></i></span>Merchantsupport@cwams.com</li>
+                        <li><span class="fa-li"><i class="fas fa-envelope cw-text-primary"></i></span>MerchantSupport@cwams.com</li>
                         <li><span class="fa-li"><i class="fas fa-phone-alt cw-text-primary"></i></span>
                             <div>
-                                <span class="block">1(866)210-4625</span>
-                                <span class="block text-xs">x1 Merchant Support (8:30am - 5:30pm EST)</span>
+                                <span class="block">1 (866) 210&ndash;4625</span>
+                                <span class="block text-xs">x1 Merchant Support (8:30am &ndash; 5:30pm EST)</span>
                                 <span class="block text-xs">x2 Technical Support (24/7)</span>
-                                <span class="block text-xs">x3 Dispute Manager (11:00am - 8:00pm EST)</span>   
+                                <span class="block text-xs">x3 Dispute Manager (11:00am &ndash; 8:00pm EST)</span>   
                             </div> 
                         </li>
                     </ul> 
