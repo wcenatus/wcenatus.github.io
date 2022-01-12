@@ -1,3 +1,5 @@
+/* CSS FILE IS IN CLOUDINARY THIS IS JUST A COPY OF THAT FILE*/
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 html, body {
@@ -34,14 +36,14 @@ html, body {
 
 #whitebgsec2{
     border-top: 5px solid #14CF74;
-    background-image: url('./assets/images/whitebgsec2.png');
+    background-image: url('https://res.cloudinary.com/dsjlys2pf/image/upload/v1642007898/css/assets/images/whitebgsec2_uerzky.png');
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
 }
 #blackbgsec2{
     border-top: 5px solid #3E9CFC;
-    background-image: url('./assets/images/blackbgsec2.png');
+    background-image: url('https://res.cloudinary.com/dsjlys2pf/image/upload/v1642007898/css/assets/images/blackbgsec2_camnod.png');
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,7 +51,7 @@ html, body {
 #about{
     background-color: rgba(0,0,0,.5); /* Tint color */
     background-blend-mode: multiply;
-    background-image: url('./assets/images/about-img.jpg');
+    background-image: url('https://res.cloudinary.com/dsjlys2pf/image/upload/v1642007898/css/assets/images/about-img_l3vhiw.jpg');
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
