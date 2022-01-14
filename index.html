@@ -35,10 +35,10 @@
                         </button>
                     </div>
                     <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 xl:pb-0 xl:flex xl:justify-end xl:flex-row">
-                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent rounded text-white xl:mt-0 xl:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/merchants/">Merchants</a>
                         <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent rounded text-white xl:mt-0 xl:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/partner-program/">Partner Program</a>
+                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent rounded text-white xl:mt-0 xl:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/merchants/">Merchants</a>
                         <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent rounded text-white xl:mt-0 xl:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/industry-news/">Industry News</a>
-                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent rounded text-white xl:mt-0 xl:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/partner-program/apply-to-be-a-partner/">Apply the be a Sales Partner</a>
+                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent rounded text-white xl:mt-0 xl:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/partner-program/apply-to-be-a-partner/">Apply to be a Sales Partner</a>
                         <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent rounded text-white xl:mt-0 xl:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/cardworks-for-veterinary-program/">Veterinarians</a>        
                         <!-- <a class="bg-blue-400 rounded-lg px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg text-white xl:mt-0 xl:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-gray-800 focus:bg-gray-800 focus:outline-none focus:shadow-outline" href="/reports">Get a Quote</a>      -->
                         <div @click.away="open = false" class="relative" x-data="{ open: false }">         
@@ -148,7 +148,7 @@
     <section class="cw-bg-lightblue flex flex-col py-10 text-white">
         <div class="mx-auto text-center" data-aos="zoom-in">
             <p class="pb-4 font-semibold text-xl">Want to better understand how the CardWorks Advantage can help your business thrive?</p>
-            <a class="bg-transparent border-2 border-white-500 rounded px-4 py-2 mt-2 font-semibold rounded-lg text-white hover:text-sky-500 focus:text-white duration-500 ease-in-out transform hover:bg-white focus:bg-gray-800 focus:outline-none focus:shadow-outline">Request a Quote</a>     
+            <a href="https://cwamerchantservices.com/merchants/request-a-quote/" class="bg-transparent border-2 border-white-500 rounded px-4 py-2 mt-2 font-semibold rounded-lg text-white hover:text-sky-500 focus:text-white duration-500 ease-in-out transform hover:bg-white focus:bg-gray-800 focus:outline-none focus:shadow-outline">Request a Quote</a>     
         </div>
     </section>
 
@@ -197,7 +197,6 @@
     </footer>
 </body>
 <script>
-    var imagePath = 'https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/images/logo-white_jq8sog.png'
     AOS.init({
         once: true
     });
