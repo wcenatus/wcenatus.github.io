@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
     <style>
-        @media screen and (max-width:767px) {
+        @media screen and (max-width:1439px) {
             .hero{
                 background-color: #254B6D; background-image:linear-gradient(0deg, rgb(38,61,141,0.80),rgba(38,61,141,0.90),rgba(38,61,141),rgba(38,61,141)),url(https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642780812/cwa/assets/images/GettyImages-1355392782Resized_w5shkz.jpg);
             }
@@ -34,22 +34,22 @@
         </div> 
         <div class="antialiased dark-mode:bg-gray-900">
             <div class="py-5 w-full text-gray-700 cw-bg-primary dark-mode:text-gray-200 dark-mode:bg-gray-800">
-                <div x-data="{ open: false }" class="flex flex-col xl:px-60 lg:px-20 px-10 lg:items-center lg:justify-between lg:flex-row">
+                <div x-data="{ open: false }" class="flex flex-col xl:px-60 md:px-20 px-10 md:items-center md:justify-between md:flex-row">
                     <div class="flex flex-row items-center justify-between p-1">
                         <div class="col-span-1">
                             <a href="/"><img class="h-14 w-auto" src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/images/logo-white_jq8sog.png"/></a>
                         </div>
-                        <button class=" lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+                        <button class=" md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
                             <i x-show="!open" class="fas fa-bars text-white text-2xl"></i>
                             <i x-show="open" class="fas fa-times text-white text-2xl"></i>
                         </button>
                     </div>
-                    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 lg:pb-0 lg:flex lg:justify-end lg:flex-row">
-                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent text-white lg:mt-0 lg:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/partner-program/">Partner Program</a>
-                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent text-white lg:mt-0 lg:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/merchants/">Merchants</a>
-                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent text-white lg:mt-0 lg:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/industry-news/">Industry News</a>
-                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent text-white lg:mt-0 lg:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/partner-program/apply-to-be-a-partner/">Apply to be a Sales Partner</a>
-                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent text-white lg:mt-0 lg:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/cardworks-for-veterinary-program/">Veterinarians</a>        
+                    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent text-white md:mt-0 md:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/partner-program/">Partner Program</a>
+                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent text-white md:mt-0 md:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/merchants/">Merchants</a>
+                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent text-white md:mt-0 md:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/industry-news/">Industry News</a>
+                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent text-white md:mt-0 md:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/partner-program/apply-to-be-a-partner/">Apply to be a Sales Partner</a>
+                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent text-white md:mt-0 md:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/cardworks-for-veterinary-program/">Veterinarians</a>        
                         <!-- <a class="bg-blue-400  px-4 py-2 mt-2 text-sm font-semibold bg-transparent  text-white xl:mt-0 xl:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-gray-800 focus:bg-gray-800 focus:outline-none focus:shadow-outline" href="/reports">Get a Quote</a>      -->
                         <div @click.away="open = false" class="relative" x-data="{ open: false }">         
                     </nav>
@@ -60,7 +60,7 @@
     
     <section class="h-full w-full hero cw-bg-secondary" style="position: relative;">
         <div class="grid grid-cols-2 pt-28" style="height: 100%; width: 100%;">
-            <div class="col-span-2 md:col-span-1 flex">
+            <div class="col-span-2 lg:col-span-1 flex">
                 <div class="m-auto xl:pl-60 lg:pl-20 p-10" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <div class="relative">
                         <!-- <div id="topleft" style=" margin:-20px 0 0 -20px;" class="w-4 h-4 absolute border-l-4 border-t-4 border-white "></div>
@@ -72,7 +72,7 @@
                     <a onclick="plausible('Islanders MRF')" href="https://islanders.merchantreferral.partners/" class="lg:text-2xl text-lg cw-bg-lightblue px-4 py-2 font-semibold text-white hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-gray-800 focus:bg-gray-800 focus:outline-none focus:shadow-outline">Enter to win</a>
                 </div>        
             </div>
-            <div class="hidden md:block col-span-1" >
+            <div class="hidden lg:block col-span-1" >
                 <div class="w-full h-full"style="background-image: url(https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642780812/cwa/assets/images/GettyImages-1355392782Resized_w5shkz.jpg);background-position: center; background-repeat: no-repeat;background-size: cover; background-color: rgba(49, 73, 159,.1); background-blend-mode: multiply; "></div>
             </div>
         </div>
@@ -95,7 +95,7 @@
         </div>
     </section>
 
-    <div class="flex flex-col lg:my-28 bg-white xl:px-60 lg:px-32 p-10 pb-32">
+    <div class="flex flex-col bg-white xl:px-60 lg:px-32 px-10 lg:my-48 my-10 pb-10">
        
         <div class="m-auto">
              <div class="block mx-auto text-center mb-16 pt-100" data-aos="fade">
