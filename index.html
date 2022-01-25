@@ -12,12 +12,19 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <style></style>
+    <style>
+        @media screen and (max-width:767px) {
+            .hero{
+                background-color: #254B6D; background-image:linear-gradient(0deg, rgb(38,61,141,0.80),rgba(38,61,141,0.90),rgba(38,61,141),rgba(38,61,141)),url(https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642780812/cwa/assets/images/GettyImages-1355392782Resized_w5shkz.jpg);
+            }
+            
+        }
+    </style>
     <title>CardWorks Acquiring</title>
 </head>
 <body> 
     <div class="cw-bg-secondary">
-        <div class="xl:mx-60 flex justify-end space-x-4 justify-center text-xs lg:justify-end lg:text-sm">
+        <div class="xl:mx-60 lg:mx-20 mx-10 flex justify-end space-x-4 justify-center text-xs md:justify-end lg:text-sm">
             <a class="py-2 font-semibold bg-transparent cw-text-lightblue" href="https://cwamerchantservices.com/partner-panel">Partner Log in</a>
             <a class="py-2 font-semibold bg-transparent cw-text-lightblue" href="https://cwamerchantservices.com/web-reporting">Merchant Web Reporting Login</a>
             <a class="py-2 font-semibold bg-transparent cw-text-lightblue" href="https://cwamerchantservices.com/cwa-gateway-log-in">CWA Gateway Login</a>   
@@ -27,22 +34,22 @@
     <div id="navbar" class="w-100 top-0 left-0" style="z-index: 1000; width: 100%;">
         <div class="antialiased dark-mode:bg-gray-900">
             <div class="py-5 w-full text-gray-700 cw-bg-primary dark-mode:text-gray-200 dark-mode:bg-gray-800">
-                <div x-data="{ open: false }" class="flex flex-col mx-10 xl:mx-60 xl:items-center xl:justify-between xl:flex-row">
+                <div x-data="{ open: false }" class="flex flex-col xl:px-60 lg:px-20 px-10 lg:items-center lg:justify-between lg:flex-row">
                     <div class="flex flex-row items-center justify-between p-1">
                         <div class="col-span-1">
                             <a href="/"><img class="h-14 w-auto" src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/images/logo-white_jq8sog.png"/></a>
                         </div>
-                        <button class=" xl:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+                        <button class=" lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
                             <i x-show="!open" class="fas fa-bars text-white text-2xl"></i>
                             <i x-show="open" class="fas fa-times text-white text-2xl"></i>
                         </button>
                     </div>
-                    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 xl:pb-0 xl:flex xl:justify-end xl:flex-row">
-                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent  text-white xl:mt-0 xl:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/partner-program/">Partner Program</a>
-                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent  text-white xl:mt-0 xl:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/merchants/">Merchants</a>
-                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent  text-white xl:mt-0 xl:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/industry-news/">Industry News</a>
-                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent  text-white xl:mt-0 xl:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/partner-program/apply-to-be-a-partner/">Apply to be a Sales Partner</a>
-                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent  text-white xl:mt-0 xl:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/cardworks-for-veterinary-program/">Veterinarians</a>        
+                    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 lg:pb-0 lg:flex lg:justify-end lg:flex-row">
+                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent text-white lg:mt-0 lg:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/partner-program/">Partner Program</a>
+                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent text-white lg:mt-0 lg:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/merchants/">Merchants</a>
+                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent text-white lg:mt-0 lg:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/industry-news/">Industry News</a>
+                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent text-white lg:mt-0 lg:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/partner-program/apply-to-be-a-partner/">Apply to be a Sales Partner</a>
+                        <a class="py-2 px-2 mt-2 text-sm font-semibold bg-transparent text-white lg:mt-0 lg:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-blue-900 focus:bg-blue-900 focus:outline-none focus:shadow-outline" href="https://cwamerchantservices.com/cardworks-for-veterinary-program/">Veterinarians</a>        
                         <!-- <a class="bg-blue-400  px-4 py-2 mt-2 text-sm font-semibold bg-transparent  text-white xl:mt-0 xl:ml-4 hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-gray-800 focus:bg-gray-800 focus:outline-none focus:shadow-outline" href="/reports">Get a Quote</a>      -->
                         <div @click.away="open = false" class="relative" x-data="{ open: false }">         
                     </nav>
@@ -51,10 +58,10 @@
         </div>
     </div>
     
-    <section class="w-full cw-bg-secondary" style="height: 80%; position: relative;">
+    <section class="w-full hero cw-bg-secondary" style="height: 80%; position: relative;">
         <div class="grid grid-cols-2" style="height: 100%; width: 100%;">
-            <div class="col-span-2 lg:col-span-1 flex">
-                <div class="m-auto xl:pl-60 px-10" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="col-span-2 md:col-span-1 flex">
+                <div class="m-auto xl:pl-60 lg:pl-20 p-10" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <div class="relative">
                         <!-- <div id="topleft" style=" margin:-20px 0 0 -20px;" class="w-4 h-4 absolute border-l-4 border-t-4 border-white "></div>
                         <div id="bottomright" style=" margin:0 0px 20px 0;" class="w-4 h-4 absolute bottom-0 right-20 border-r-4 border-b-4 border-white "></div> -->
@@ -65,7 +72,7 @@
                     <a onclick="plausible('Islanders MRF')" href="https://islanders.merchantreferral.partners/" class="text-lg cw-bg-lightblue px-4 py-2 font-semibold text-white hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-gray-800 focus:bg-gray-800 focus:outline-none focus:shadow-outline">Contact Now</a>
                 </div>        
             </div>
-            <div class="hidden lg:block col-span-1" >
+            <div class="hidden md:block col-span-1" >
                 <div class="w-full h-full"style="background-image: url(https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642780812/cwa/assets/images/GettyImages-1355392782Resized_w5shkz.jpg);background-position: center; background-repeat: no-repeat;background-size: cover; background-color: rgba(49, 73, 159,.1); background-blend-mode: multiply; "></div>
             </div>
         </div>
@@ -74,12 +81,12 @@
     <section class="">
         
         <div class="grid grid-cols-2" style="height: 100%; width: 100%;">
-            <div id="blackbgsec2" class="col-span-2 lg:col-span-1 xl:pl-60 p-10 text-left">
+            <div id="blackbgsec2" class="col-span-2 md:col-span-1 xl:pl-60 lg:pl-20 p-10 text-left">
                 <h2 data-aos="fade" data-aos-anchor-placement="top-bottom" class="font-bold text-xl cw-text-lightblue">Merchant Services</h2>
                 <p data-aos="fade" data-aos-anchor-placement="top-bottom" class="my-3 mb-5 font-semibold text-white text-lg">Discover how our cost-effective credit card processing, innovative payment solutions and round-the-clock support are tailor-made to help your business thrive.</p>
                 <a href="https://cwamerchantservices.com/merchants" data-aos="fade" data-aos-anchor-placement="top-bottom" class="cw-bg-lightblue  px-4 py-2 mt-2 font-semibold  text-white hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-gray-800 focus:bg-gray-800 focus:outline-none focus:shadow-outline">Learn More</a>
             </div>
-            <div id="whitebgsec2" class="col-span-2 lg:col-span-1 xl:pr-60 p-10 text-left">
+            <div id="whitebgsec2" class="col-span-2 md:col-span-1 xl:pr-60 lg:pr-20 p-10 text-left">
                 <h2 data-aos="fade" data-aos-anchor-placement="top-bottom" class="font-bold text-xl cw-text-green">Sales Partner Program</h2>
                 <p data-aos="fade" data-aos-anchor-placement="top-bottom" class="my-3 mb-5 font-semibold text-lg">Generous compensation, a lucrative bonus structure and the freedom to work when you want — if this sounds like the perfect job, then a career in our Sales Partner Program is made for you.</p>
                 <a href="https://cwamerchantservices.com/partner-program" data-aos="fade" data-aos-anchor-placement="top-bottom" class="cw-bg-green  px-4 py-2 mt-2 font-semibold  text-white hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-gray-800 focus:bg-gray-800 focus:outline-none focus:shadow-outline">Learn More</a>
@@ -88,51 +95,51 @@
         </div>
     </section>
 
-    <section class="flex flex-col pt-20 pb-32">
+    <section class="flex flex-col xl:px-60 lg:px-20 p-10 pb-32">
         <div class="block mx-auto mb-16" data-aos="fade">
-          <h2 class="font-bold text-3xl mb-4">Why Cardworks?</h2>
+          <h2 class="font-bold text-3xl mb-4 ">Why Cardworks?</h2>
             <div class="w-10 h-2 bg-gray-100 mx-auto"></div>  
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-20 block xl:mx-60 mx-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-20 block">
             <div class="flex items-start col-span-1"  data-aos="fade-up">
                 <image src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/icons/cards_gd2fs5.png" class="inline-block mr-10"/>
-                <div class="inline-block w-64">
+                <div class="inline-block">
                    <p class="py-4 uppercase font-bold">Fast & Flexible Processing</p>
                    <p >Get more business done at the point of sale when you're equipped to accept all major credit cards, debit cards, mobile payments, gift cards and EBT.</p> 
                 </div> 
             </div>
             <div class="flex items-start col-span-1" data-aos="fade-up">
                 <image src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/icons/computer-card_vu9qo9.png" class="inline-block mr-10"/>
-                <div class="inline-block w-64">
+                <div class="inline-block">
                    <p class="py-4 uppercase font-bold">Innovative Payment Solutions</p>
                    <p >Do business online or on-the-go with innovations like our CWA Card Swiper, state-of-the-art Virtual Terminals and seamless Quickbooks integration.</p> 
                 </div> 
             </div>
             <div class="flex items-start col-span-1" data-aos="fade-up">
                 <image src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/icons/bank_bjx1x9.png" class="inline-block mr-10"/>
-                <div class="inline-block w-64">
+                <div class="inline-block">
                    <p class="py-4 uppercase font-bold">Next Day Funding</p>
                    <p >Bring every transaction full circle in less than a day with our streamlined, end-to-end credit card processing.</p> 
                 </div> 
             </div>
             <div class="flex items-start col-span-1" data-aos="fade-up">
                 <image src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/icons/handshake_kru6wk.png" class="inline-block mr-10"/>
-                <div class="inline-block w-64">
+                <div class="inline-block">
                    <p class="py-4 uppercase font-bold">Merchant Referral Program</p>
                    <p >Take advantage of our best-in-class Merchant Referral Program and earn credit toward your account each time you make a successful referral.</p> 
                 </div> 
             </div>
             <div class="flex items-start col-span-1" data-aos="fade-up">
                 <image src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/icons/lightbulb_ip5qb8.png" class="inline-block mr-10"/>
-                <div class="inline-block w-64">
+                <div class="inline-block">
                    <p class="py-4 uppercase font-bold">Small Business Loans</p>
                    <p >It's true what they say: it takes money to make money. We can help you invest in your business's growth with an attractive term loan or cash advance.</p> 
                 </div> 
             </div>
             <div class="flex items-start col-span-1" data-aos="fade-up">
                 <image src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/icons/chat_gnioqd.png" class="inline-block mr-10"/>
-                <div class="inline-block w-64">
+                <div class="inline-block">
                    <p class="py-4 uppercase font-bold">Customer Support</p>
                    <p >Our world-class Customer Service and Technical Support teams are available to assist you day and night — year round — no matter what.</p> 
                 </div> 
@@ -140,8 +147,8 @@
         </div>
     </section>
 
-    <section id="about" class="cw-bg-secondary flex flex-col py-20 px-10 text-white" >
-        <div class="lg:w-2/3 xl:w-1/3 mx-auto">
+    <section id="about" class="cw-bg-secondary flex flex-col py-20 xl:px-60 lg:px-20 p-10 text-white" >
+        <div class="lg:w-2/3 mx-auto">
           <h2 class="text-center text-3xl mb-8 font-bold" data-aos="fade">About Cardworks Acquiring</h2>
             <p class="text-center text-xl" data-aos="fade-up">
                 When we first started out in the merchant services industry, it was to do more than provide businesses with fast and affordable ways to process credit card payments. 
@@ -151,7 +158,7 @@
         </div>
     </section>
 
-    <section class="cw-bg-lightblue flex flex-col py-10 text-white">
+    <section class="cw-bg-lightblue flex flex-col xl:px-60 lg:px-20 p-10 text-white">
         <div class="mx-auto text-center" data-aos="zoom-in">
             <p class="pb-4 font-semibold text-xl">Want to better understand how the CardWorks Advantage can help your business thrive?</p>
             <a href="https://cwamerchantservices.com/merchants/request-a-quote/" class="bg-transparent border-2 border-white-500  px-4 py-2 mt-2 font-semibold  text-white hover:text-blue-400 focus:text-white duration-500 ease-in-out transform hover:bg-white focus:bg-gray-800 focus:outline-none focus:shadow-outline">Request a Quote</a>     
@@ -159,7 +166,7 @@
     </section>
 
     <section class="py-10 w-full">
-        <div class="lg:px-60">
+        <div class="xl:px-60 lg:px-20 px-10">
             <div class="w-full grid md:grid-cols-3 grid-cols-1 gap-4 mx-auto">
                 <div class="flex flex-col col-span-1 w-56 mx-auto">
                     <label class="cw-text-primary font-bold text-lg mb-5">Cardworks Acquiring</label>
@@ -198,7 +205,7 @@
             </div>
         </div>
     </section>
-    <footer class="py-7 px-10 bg-gray-100 text-gray-500 text-xs lg:text-sm text-center">
+    <footer class="py-7 xl:px-60 lg:px-20 px-10 bg-gray-100 text-gray-500 text-xs lg:text-sm text-center">
         <p>CardWorks Acquiring is a Registered ISO/MSP of Merrick Bank Corporation, South Jordan, Utah. © 2015. CARDWORKS® is a registered service mark of CardWorks, Inc. used pursuant to license.</p>
     </footer>
 </body>
