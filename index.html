@@ -23,15 +23,15 @@
     <title>CardWorks Acquiring</title>
 </head>
 <body> 
-    <div class="cw-bg-secondary">
-        <div class="xl:mx-60 lg:mx-20 mx-10 flex justify-end space-x-4 justify-center text-xs md:justify-end lg:text-sm">
-            <a class="py-2 font-semibold bg-transparent cw-text-lightblue" href="https://cwamerchantservices.com/partner-panel">Partner Log in</a>
-            <a class="py-2 font-semibold bg-transparent cw-text-lightblue" href="https://cwamerchantservices.com/web-reporting">Merchant Web Reporting Login</a>
-            <a class="py-2 font-semibold bg-transparent cw-text-lightblue" href="https://cwamerchantservices.com/cwa-gateway-log-in">CWA Gateway Login</a>   
-        </div>
-        
-    </div>    
-    <div id="navbar" class="w-100 top-0 left-0" style="z-index: 1000; width: 100%;">
+       
+    <div id="navbar" class="w-100 top-0 left-0 absolute" style="z-index: 1000; width: 100%;">
+        <div class="cw-bg-secondary">
+            <div class="xl:mx-60 lg:mx-20 mx-10 flex justify-end space-x-4 justify-center text-xs md:justify-end lg:text-sm">
+                <a class="py-2 font-semibold bg-transparent cw-text-lightblue" href="https://cwamerchantservices.com/partner-panel">Partner Log in</a>
+                <a class="py-2 font-semibold bg-transparent cw-text-lightblue" href="https://cwamerchantservices.com/web-reporting">Merchant Web Reporting Login</a>
+                <a class="py-2 font-semibold bg-transparent cw-text-lightblue" href="https://cwamerchantservices.com/cwa-gateway-log-in">CWA Gateway Login</a>   
+            </div>   
+        </div> 
         <div class="antialiased dark-mode:bg-gray-900">
             <div class="py-5 w-full text-gray-700 cw-bg-primary dark-mode:text-gray-200 dark-mode:bg-gray-800">
                 <div x-data="{ open: false }" class="flex flex-col xl:px-60 lg:px-20 px-10 lg:items-center lg:justify-between lg:flex-row">
@@ -58,18 +58,18 @@
         </div>
     </div>
     
-    <section class="w-full hero cw-bg-secondary" style="height: 80%; position: relative;">
-        <div class="grid grid-cols-2" style="height: 100%; width: 100%;">
+    <section class="h-full w-full hero cw-bg-secondary" style="position: relative;">
+        <div class="grid grid-cols-2 pt-28" style="height: 100%; width: 100%;">
             <div class="col-span-2 md:col-span-1 flex">
                 <div class="m-auto xl:pl-60 lg:pl-20 p-10" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <div class="relative">
                         <!-- <div id="topleft" style=" margin:-20px 0 0 -20px;" class="w-4 h-4 absolute border-l-4 border-t-4 border-white "></div>
                         <div id="bottomright" style=" margin:0 0px 20px 0;" class="w-4 h-4 absolute bottom-0 right-20 border-r-4 border-b-4 border-white "></div> -->
-                        <image src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642533734/cwa/assets/images/openanewaccount_xcyzwn.png"/>
-                        <image style="margin: -20px 0 -20px 0;" src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642533714/cwa/assets/images/winislanderstickets_hqlglz.png"/>  
+                        <image class="" src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642533734/cwa/assets/images/openanewaccount_xcyzwn.png"/>
+                        <image class="" style="margin: -20px 0 -20px 0;" src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642533714/cwa/assets/images/winislanderstickets_hqlglz.png"/>  
                     </div>
-                    <p class="text-white font-semibold text-xl my-7 lg:pr-24">When we first started out in the merchant services industry, it was to do more than provide businesses with fast and affordable ways to process credit card payments.</p>  
-                    <a onclick="plausible('Islanders MRF')" href="https://islanders.merchantreferral.partners/" class="text-lg cw-bg-lightblue px-4 py-2 font-semibold text-white hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-gray-800 focus:bg-gray-800 focus:outline-none focus:shadow-outline">Contact Now</a>
+                    <p class="text-white font-semibold text-xl my-7 lg:pr-24">Win two tickets to a 2021–2022 regular season NY Islanders home game at UBS Arena.</p>  
+                    <a onclick="plausible('Islanders MRF')" href="https://islanders.merchantreferral.partners/" class="lg:text-2xl text-lg cw-bg-lightblue px-4 py-2 font-semibold text-white hover:text-white focus:text-white duration-500 ease-in-out transform hover:bg-gray-800 focus:bg-gray-800 focus:outline-none focus:shadow-outline">Enter to win</a>
                 </div>        
             </div>
             <div class="hidden md:block col-span-1" >
@@ -95,57 +95,60 @@
         </div>
     </section>
 
-    <section class="flex flex-col xl:px-60 lg:px-20 p-10 pb-32">
-        <div class="block mx-auto mb-16" data-aos="fade">
-          <h2 class="font-bold text-3xl mb-4 ">Why Cardworks?</h2>
-            <div class="w-10 h-2 bg-gray-100 mx-auto"></div>  
+    <div class="flex flex-col lg:my-28 bg-white xl:px-60 lg:px-32 p-10 pb-32">
+       
+        <div class="m-auto">
+             <div class="block mx-auto text-center mb-16 pt-100" data-aos="fade">
+            <h2 class="font-bold text-3xl mb-4 mx-auto">Why Cardworks?</h2>
+                <div class="w-10 h-2 bg-gray-100 mx-auto"></div>  
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-20 block">
+                <div class="flex items-start col-span-1"  data-aos="fade-up">
+                    <image src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/icons/cards_gd2fs5.png" class="inline-block mr-10"/>
+                    <div class="inline-block">
+                    <p class="py-4 uppercase font-bold">Fast & Flexible Processing</p>
+                    <p >Get more business done at the point of sale when you're equipped to accept all major credit cards, debit cards, mobile payments, gift cards and EBT.</p> 
+                    </div> 
+                </div>
+                <div class="flex items-start col-span-1" data-aos="fade-up">
+                    <image src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/icons/computer-card_vu9qo9.png" class="inline-block mr-10"/>
+                    <div class="inline-block">
+                    <p class="py-4 uppercase font-bold">Innovative Payment Solutions</p>
+                    <p >Do business online or on-the-go with innovations like our CWA Card Swiper, state-of-the-art Virtual Terminals and seamless Quickbooks integration.</p> 
+                    </div> 
+                </div>
+                <div class="flex items-start col-span-1" data-aos="fade-up">
+                    <image src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/icons/bank_bjx1x9.png" class="inline-block mr-10"/>
+                    <div class="inline-block">
+                    <p class="py-4 uppercase font-bold">Next Day Funding</p>
+                    <p >Bring every transaction full circle in less than a day with our streamlined, end-to-end credit card processing.</p> 
+                    </div> 
+                </div>
+                <div class="flex items-start col-span-1" data-aos="fade-up">
+                    <image src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/icons/handshake_kru6wk.png" class="inline-block mr-10"/>
+                    <div class="inline-block">
+                    <p class="py-4 uppercase font-bold">Merchant Referral Program</p>
+                    <p >Take advantage of our best-in-class Merchant Referral Program and earn credit toward your account each time you make a successful referral.</p> 
+                    </div> 
+                </div>
+                <div class="flex items-start col-span-1" data-aos="fade-up">
+                    <image src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/icons/lightbulb_ip5qb8.png" class="inline-block mr-10"/>
+                    <div class="inline-block">
+                    <p class="py-4 uppercase font-bold">Small Business Loans</p>
+                    <p >It's true what they say: it takes money to make money. We can help you invest in your business's growth with an attractive term loan or cash advance.</p> 
+                    </div> 
+                </div>
+                <div class="flex items-start col-span-1" data-aos="fade-up">
+                    <image src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/icons/chat_gnioqd.png" class="inline-block mr-10"/>
+                    <div class="inline-block">
+                    <p class="py-4 uppercase font-bold">Customer Support</p>
+                    <p >Our world-class Customer Service and Technical Support teams are available to assist you day and night — year round — no matter what.</p> 
+                    </div> 
+                </div>
+            </div>
         </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-20 block">
-            <div class="flex items-start col-span-1"  data-aos="fade-up">
-                <image src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/icons/cards_gd2fs5.png" class="inline-block mr-10"/>
-                <div class="inline-block">
-                   <p class="py-4 uppercase font-bold">Fast & Flexible Processing</p>
-                   <p >Get more business done at the point of sale when you're equipped to accept all major credit cards, debit cards, mobile payments, gift cards and EBT.</p> 
-                </div> 
-            </div>
-            <div class="flex items-start col-span-1" data-aos="fade-up">
-                <image src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/icons/computer-card_vu9qo9.png" class="inline-block mr-10"/>
-                <div class="inline-block">
-                   <p class="py-4 uppercase font-bold">Innovative Payment Solutions</p>
-                   <p >Do business online or on-the-go with innovations like our CWA Card Swiper, state-of-the-art Virtual Terminals and seamless Quickbooks integration.</p> 
-                </div> 
-            </div>
-            <div class="flex items-start col-span-1" data-aos="fade-up">
-                <image src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/icons/bank_bjx1x9.png" class="inline-block mr-10"/>
-                <div class="inline-block">
-                   <p class="py-4 uppercase font-bold">Next Day Funding</p>
-                   <p >Bring every transaction full circle in less than a day with our streamlined, end-to-end credit card processing.</p> 
-                </div> 
-            </div>
-            <div class="flex items-start col-span-1" data-aos="fade-up">
-                <image src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/icons/handshake_kru6wk.png" class="inline-block mr-10"/>
-                <div class="inline-block">
-                   <p class="py-4 uppercase font-bold">Merchant Referral Program</p>
-                   <p >Take advantage of our best-in-class Merchant Referral Program and earn credit toward your account each time you make a successful referral.</p> 
-                </div> 
-            </div>
-            <div class="flex items-start col-span-1" data-aos="fade-up">
-                <image src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/icons/lightbulb_ip5qb8.png" class="inline-block mr-10"/>
-                <div class="inline-block">
-                   <p class="py-4 uppercase font-bold">Small Business Loans</p>
-                   <p >It's true what they say: it takes money to make money. We can help you invest in your business's growth with an attractive term loan or cash advance.</p> 
-                </div> 
-            </div>
-            <div class="flex items-start col-span-1" data-aos="fade-up">
-                <image src="https://res.cloudinary.com/dg8d3kpjx/image/upload/v1642170290/cwa/assets/icons/chat_gnioqd.png" class="inline-block mr-10"/>
-                <div class="inline-block">
-                   <p class="py-4 uppercase font-bold">Customer Support</p>
-                   <p >Our world-class Customer Service and Technical Support teams are available to assist you day and night — year round — no matter what.</p> 
-                </div> 
-            </div>
-        </div>
-    </section>
+    </div>
 
     <section id="about" class="cw-bg-secondary flex flex-col py-20 xl:px-60 lg:px-20 p-10 text-white" >
         <div class="lg:w-2/3 mx-auto">
